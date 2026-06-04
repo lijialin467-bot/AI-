@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI行业动态资讯简报 | 2026-06-02</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#7B61FF',
+                        accent: '#FF7D00',
+                        dark: '#1D2129',
+                        light: '#F2F3F5'
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-gradient {
+                background: linear-gradient(135deg, #165DFF 0%, #7B61FF 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 顶部导航 -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-sm border-b border-gray-200 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-newspaper-o text-primary text-2xl"></i>
+                    <span class="font-bold text-xl">AI行业动态</span>
+                </div>
+                <div class="text-sm text-gray-500">
+                    <i class="fa fa-calendar-o mr-1"></i>2026-06-02
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 头部横幅 -->
+    <header class="bg-gradient-to-r from-primary/10 to-secondary/10 py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-4">
+                <span class="text-gradient">AI行业动态资讯简报</span>
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                聚焦全球AI产业前沿动态，把握技术创新与商业发展脉搏
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- 本期主线 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">本期主线</h2>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <p class="text-lg leading-relaxed text-gray-700">
+                    本期AI行业迎来多个重要动态：国产大模型<span class="font-semibold text-primary">MiniMax</span>发布新一代旗舰模型M3，<span class="font-semibold text-secondary">Anthropic</span>秘密递交IPO招股书有望成为AI史上最大IPO，<span class="font-semibold text-accent">英伟达</span>GTC 2026发布5500亿参数开源模型Nemotron 3 Ultra，微软即将发布首个自研推理模型，联汇科技推出端侧AI视频创作工具。
+                </p>
+            </div>
+        </section>
+
+        <!-- 国产大模型技术突破 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">国产大模型技术突破</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-red-500/10 to-orange-500/10 p-6 border-b border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900">MiniMax发布新一代通用模型M3</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        国产大模型公司MiniMax正式发布新一代通用模型MiniMax M3。该模型采用全新自研稀疏注意力架构MSA（MiniMax Sparse Attention），最高支持<span class="font-semibold">1M超长上下文</span>，在编程及智能体能力、原生多模态等多个关键方向实现突破。
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-3xl font-bold text-primary mb-1">1M</div>
+                            <div class="text-sm text-gray-500">超长上下文支持</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-3xl font-bold text-secondary mb-1">MSA</div>
+                            <div class="text-sm text-gray-500">自研稀疏注意力架构</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-3xl font-bold text-accent mb-1">多模态</div>
+                            <div class="text-sm text-gray-500">原生多模态能力</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI行业投融资动态 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">AI行业投融资动态</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-green-500/10 to-emerald-500/10 p-6 border-b border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900">Anthropic递交IPO招股书，估值逼近万亿美元</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        AI头部企业Anthropic向美国SEC秘密递交IPO招股书，最快今年秋季挂牌上市，公司估值逼近<span class="font-semibold text-green-600">9650亿美元</span>，有望成为AI行业史上最大IPO。
+                    </p>
+                    <div class="bg-green-50 rounded-xl p-6 mb-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">估值规模</div>
+                                <div class="text-2xl font-bold text-green-600">9650亿美元</div>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500 mb-1">预计上市时间</div>
+                                <div class="text-2xl font-bold text-green-600">2026年秋季</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 国际AI巨头产品与技术更新 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">国际AI巨头产品与技术更新</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- 英伟达卡片 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-blue-500/10 to-indigo-500/10 p-6 border-b border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900">英伟达发布Nemotron 3 Ultra开源模型</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 leading-relaxed mb-4 text-sm">
+                            在GTC 2026大会上，英伟达发布了Nemotron 3 Ultra开源模型。该模型拥有5500亿参数的混合专家架构，推理速度较同级别前沿模型提升高达5倍，推理成本降低30%。
+                        </p>
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="bg-blue-50 rounded-lg p-3 text-center">
+                                <div class="text-lg font-bold text-blue-600">5500亿</div>
+                                <div class="text-xs text-gray-500">参数规模</div>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-3 text-center">
+                                <div class="text-lg font-bold text-blue-600">5倍</div>
+                                <div class="text-xs text-gray-500">速度提升</div>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-3 text-center">
+                                <div class="text-lg font-bold text-blue-600">-30%</div>
+                                <div class="text-xs text-gray-500">成本降低</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 微软卡片 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden card-hover">
+                    <div class="bg-gradient-to-r from-indigo-500/10 to-purple-500/10 p-6 border-b border-gray-100">
+                        <h3 class="text-lg font-bold text-gray-900">微软即将发布首个自研推理模型</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 leading-relaxed mb-4 text-sm">
+                            微软将在Build 2026大会上发布首个自研推理模型MAI-Thinking-1，同时推出整合Copilot AI助手的超级应用，包含Microsoft Scout AI代理。
+                        </p>
+                        <div class="bg-indigo-50 rounded-lg p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-xs text-gray-500">模型名称</div>
+                                    <div class="font-bold text-indigo-600">MAI-Thinking-1</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500">定位</div>
+                                    <div class="font-bold text-indigo-600">企业级</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AIGC工具创新 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold mb-6">AIGC工具创新</h2>
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden card-hover">
+                <div class="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 border-b border-gray-100">
+                    <h3 class="text-xl font-bold text-gray-900">联汇科技发布端侧AI视频创作工具</h3>
+                </div>
+                <div class="p-6">
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        联汇科技发布OttoBox视频创作助理，基于自研端侧多模态大模型OmModel，搭建<span class="font-semibold text-purple-600">AI Drive、AI Finder、AI Agent</span>三位一体功能架构。该工具将视频粗剪工作从8小时缩短至30分钟。
+                    </p>
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-4">
+                        <div class="flex items-center justify-center space-x-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-purple-600">8h</div>
+                                <div class="text-xs text-gray-500">传统粗剪耗时</div>
+                            </div>
+                            <i class="fa fa-arrow-right text-2xl text-gray-400"></i>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-pink-600">30min</div>
+                                <div class="text-xs text-gray-500">OttoBox粗剪耗时</div>
+                            </div>
+                            <div class="text-center ml-4">
+                                <div class="text-2xl font-bold text-green-600">94%↓</div>
+                                <div class="text-xs text-gray-500">效率提升</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm mb-2">每日更新 · 聚焦AI产业前沿</p>
+            <p class="text-gray-500 text-xs">© 2026 AI行业动态资讯简报 · 自动生成于 2026-06-02</p>
+        </div>
+    </footer>
+</body>
+</html>
